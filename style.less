@@ -1,6 +1,4 @@
-/* --------------------------------------- */
-/* ----- Basic Setup ----- */
-/* --------------------------------------- */
+/* Basic Setup */
 
 @font-face {
     font-family: 'Hk Grotesk';
@@ -83,9 +81,7 @@ img {
     max-width: 100%;
 }
 
-/* --------------------------------------- */
-/* ----- Headlines and Paragraphs ----- */
-/* --------------------------------------- */
+/* Headlines and Paragraphs */
 
 h1,
 h2,
@@ -151,9 +147,7 @@ p {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Buttons and Links ----- */
-/* --------------------------------------- */
+/* Buttons and Links */
 
 a {
     color: @txtHeader;
@@ -228,7 +222,7 @@ body:not(.user-is-tabbing) a:focus {
     background: transparent;
 }
 
-.link__text {
+.link_text {
     position: relative;
     display: inline-block;
     padding: .6rem;
@@ -237,7 +231,7 @@ body:not(.user-is-tabbing) a:focus {
     border-bottom: 1px solid @selected;
 }
 
-.link__text::after {
+.link_text::after {
     content: '';
     display: block;
     position: absolute;
@@ -250,17 +244,17 @@ body:not(.user-is-tabbing) a:focus {
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
-.link__text:focus {
+.link_text:focus {
     outline: none;
 }
 
-.link__text:hover::after,
-.link__text:focus:after {
+.link_text:hover::after,
+.link_text:focus:after {
     right: 0;
     background: @selected;
 }
 
-.link__text span {
+.link_text span {
     padding-left: 1rem;
     font-family: sans-serif;
 }
@@ -283,7 +277,7 @@ body:not(.user-is-tabbing) a:focus {
     transition: all .4s;
 }
 
-.back-to-top__image {
+.back-to-top_image {
     height: 70%;
 }
 
@@ -299,9 +293,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Navigation ----- */
-/* --------------------------------------- */
+/* Navigation */
 
 .nav {
     display: flex;
@@ -309,12 +301,12 @@ body:not(.user-is-tabbing) a:focus {
     padding: 3rem 0;
 }
 
-.nav__items {
+.nav_items {
     display: flex;
     list-style: none;
 }
 
-.nav__item:not(:last-child) {
+.nav_item:not(:last-child) {
     margin-right: 2rem;
 }
 
@@ -325,7 +317,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media(max-width: 400px) {
-    .nav__item:not(:last-child) {
+    .nav_item:not(:last-child) {
         margin-right: 3rem;
     }
 }
@@ -336,7 +328,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.nav__link {
+.nav_link {
     position: relative;
     display: inline-block;
     padding: 1rem 0;
@@ -345,7 +337,7 @@ body:not(.user-is-tabbing) a:focus {
     transition: all .2s;
 }
 
-.nav__link::after {
+.nav_link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -357,19 +349,18 @@ body:not(.user-is-tabbing) a:focus {
     transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
-.nav__link:hover {
+.nav_link:hover {
     color: @selected;
 }
 
-.nav__link:hover::after {
+.nav_link:hover::after {
     right: 0;
     height: 2px;
     background: @selected;
 }
 
-/* --------------------------------------- */
-/* ----- Header ----- */
-/* --------------------------------------- */
+/* Header */
+
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
@@ -381,13 +372,13 @@ body:not(.user-is-tabbing) a:focus {
     font-size: 2.2rem;
 }
 
-.header__text {
+.header_text {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.header__text p {
+.header_text p {
     margin: 1.5rem 0 3.5rem;
     max-width: 700px;
     font-family: 'Jost', sans-serif;
@@ -399,151 +390,144 @@ body:not(.user-is-tabbing) a:focus {
         text-align: center;
     }
 
-    .header__text p {
+    .header_text p {
         transform: scale(.8);
     }
 }
 
-/* --------------------------------------- */
-/* ----- Work ----- */
-/* --------------------------------------- */
+/* Work */
 
-.work__box {
+.work_box {
     display: flex;
     align-items: center;
 }
 
 @media(max-width: 900px) {
-    .work__box {
+    .work_box {
         align-items: initial;
         flex-direction: column-reverse;
     }
 }
 
-.work__box:not(:last-child) {
+.work_box:not(:last-child) {
     margin-bottom: 12rem;
 }
 
 @media(max-width: 500px) {
-    .work__box:not(:last-child) {
+    .work_box:not(:last-child) {
         margin-bottom: 10rem;
     }
 }
 
-.work__links {
+.work_links {
     display: flex;
     align-items: center;
 }
 
-.work__text {
+.work_text {
     flex: 0 0 30%;
 }
 
-.work__list {
+.work_list {
     /* list-style-type: square; */
     list-style-position: inside;
     margin-bottom: 3rem;
 }
 
-.work__code {
+.work_code {
     display: block;
     height: 6rem;
     /* margin-left: 2rem; */
     transition: all .3s;
 }
 
-.work__code:hover {
+.work_code:hover {
     transform: scale(1.2);
 }
 
-.work__image-box {
+.work_image-box {
     margin-bottom: 3rem;
 }
 
 @media(min-width: 901px) {
-    .work__image-box {
+    .work_image-box {
         flex: 1;
         margin: 0 0 0 10rem;
     }
 }
 
 @media(max-width: 900px) {
-    .work__code {
+    .work_code {
         height: 4rem;
     }
 }
 
+ 
+/* About */
 
-/* --------------------------------------- */
-/* ----- About ----- */
-/* --------------------------------------- */
-
-.about__content {
+.about_content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
 @media(max-width: 900px) {
-    .about__content {
+    .about_content {
         flex-direction: column-reverse;
         align-items: initial;
     }
 }
 
-.about__photo-container {
+.about_photo-container {
     margin-bottom: 3rem;
 }
 
 @media(min-width: 901px) {
-    .about__text {
+    .about_text {
         flex: 0 0 35%;
     }
     
-    .about__photo-container {
+    .about_photo-container {
         flex: 1;
         margin: 0 12rem 0 0;
     }
 }
 
-/* --------------------------------------- */
-/* ----- Contact ----- */
-/* --------------------------------------- */
+ 
+/* Contact */
 
-.contact__info {
+.contact_info {
     max-width: 700px;
 }
 
-/* --------------------------------------- */
-/* ----- Footer ----- */
-/* --------------------------------------- */
+/* Footer  */
 
 .footer {
     text-align: center;
     padding: 3rem 0;
 }
 
-.footer__social-links {
+.footer_social-links {
     display: flex;
     justify-content: center;
     padding: 2rem 0;
     list-style: none;
 }
 
-.footer__social-link-item:not(:last-of-type) {
+.footer_social-link-item:not(:last-of-type) {
     margin-right: 2rem;
 }
 
-.footer__social-image {
+.footer_social-image {
     height: 4rem;
 }
 
-.footer__github-buttons {
+.footer_github-buttons {
     display: flex;
     justify-content: center;
 }
 
-.footer__github-buttons iframe {
+.footer_github-buttons iframe {
     height: 2.5rem;
     width: 84px;
     transform: translateY(3px);

@@ -1,216 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Lucas Koot | Developer WebPortfolio</title>
+    
+    <meta name="description" content="Add small description of yourself.">
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta name="keywords" content="Put your name, skills and some coding keywords">
 
-
-  <title>
-    Lucas Koot | Developer WebPortfolio
-  </title>
-
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-
-
-  <!-- <link rel="stylesheet" href="index.css" /> -->
-  <link rel="stylesheet/less" type="text/css" href="style.less" />
-  <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
 </head>
-
 <body>
 
-  <!-- Header -->
-
-  <header class="header" role="banner" id="top">
+<!-- Header -->
+<header class="header" role="banner" id="top">
     <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav" role="navigation">
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#work" class="nav_link">Work</a>
+                </li>
+                <!-- <li class="nav_item"><a href="#clients" class="nav_link">Clients</a></li> -->
+                <li class="nav_item">
+                    <a href="#about" class="nav_link">About</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#contact" class="nav_link">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Lucas Koot</span>
-        </h1>
-        <p>Een software developer vloeiend in Python, C#, HTML, CSS</p>
-        <a href="#contact" class="btn btn--pink">Neem contact op</a>
-      </div>
+    <div class="header_text-box row">
+        <div class="header_text">
+            <h1 class="heading-primary">
+                <span>Lucas Koot</span>
+            </h1>
+            <p>Een software developer vloeiend in Python, C#, HTML, CSS</p>
+            <a href="#contact" class="btn btn--pink">Neem contact op</a>
+        </div>
     </div>
-  </header>
+</header>
 
-  <main role="main">
-
-
+<main role="main">
     <section class="work" id="work">
-      <div class="row">
-        <h2>My Projects</h2>
-        <div class="work__boxes">
-
-          
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Portfolio Website</h3>
-              <p>
-                De website waar u momenteel up zit.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-
-              <div class="work__links">
-                <!-- <a href="#" target="_blank" class="link__text"> 
-                  Visit Site <span>&rarr;</span>
-                </a> -->
-                <a href="https://github.com/IDontCaramel/portfolio-website" title="View Source Code" target="_blank"> <!-- github link-->
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
+        <div class="row">
+            <h2>My Projects</h2>
+            <div class="work_boxes">
+                <div class="work_box">
+                    <div class="work_text">
+                        <h3>Portfolio Website</h3>
+                        <p>De website waar u momenteel op zit.</p>
+                        <ul class="work_list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="work_links">
+                            <!-- <a href="#" target="_blank" class="link_text"> 
+                                Visit Site <span>&rarr;</span></a> -->
+                            <a href="https://github.com/IDontCaramel/portfolio-website" title="View Source Code" target="_blank">
+                                <!-- github link-->
+                                <img src="./images/github.svg" class="work_code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work_image-box">
+                        <img src="./images/project-1.png" class="work_image" alt="Project 1">
+                    </div>
+                </div>
+                <div class="work_box">
+                    <div class="work_text">
+                        <h3>Rekenmachine</h3>
+                        <p>Een simpele rekenmachine die ik heb gemaakt op school.</p>
+                        <ul class="work_list">
+                            <li>C#</li>
+                            <li>WinForms.NET</li>
+                        </ul>
+                        <div class="work_links">
+                            <!-- <a href="#" class="link_text">
+                                Visit Site <span>&rarr;</span></a> -->
+                            <a href="https://github.com/IDontCaramel/calculator">
+                                <img src="./images/github.svg" class="work_code" title="View Source Code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work_image-box">
+                        <img src="./images/project-2.png" class="work_image" alt="Project 1">
+                    </div>
+                </div>
+                <div class="work_box">
+                    <div class="work_text">
+                        <h3>Text based game</h3>
+                        <p>Een kleine text based game geschreven in python.</p>
+                        <ul class="work_list">
+                            <li>Python</li>
+                        </ul>
+                        <div class="work_links">
+                            <!-- <a href="#" class="link_text">
+                                Visit Site <span>&rarr;</span></a> -->
+                            <a href="https://github.com/IDontCaramel/text-based-game">
+                                <img src="./images/github.svg" class="work_code" title="View Source Code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work_image-box">
+                        <img src="./images/project-3.png" class="work_image" alt="Project 3">
+                    </div>
+                </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Rekenmachine</h3>
-              <p>
-                Een simpele rekenmachine die ik heb gemaakt op school.
-              </p>
-              <ul class="work__list">
-                <li>C#</li>
-                <li>WinForms.NET</li>
-                
-              </ul>
-
-              <div class="work__links">
-                <!-- <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a> -->
-                <a href="https://github.com/IDontCaramel/calculator">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Text based game</h3>
-              <p>
-                een kleine text based game geschreven in python.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-              </ul>
-
-              <div class="work__links">
-                <!-- <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a> -->
-                <a href="https://github.com/IDontCaramel/text-based-game">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-
     <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              Hallo mijn naam is Lucas ik ben een software developer.
-              ik studeer momenteel software development op het Technova Colege.
-            </p>
-            <a href="https://www.linkedin.com/in/lucas-koot/" class="btn">Linkedin</a>
-          </div>
-
-          <div class="about__photo-container">
-            <img class="about__photo" src="./images/picture.jpg" alt="" />
-          </div>
+        <div class="row">
+            <h2>About Me</h2>
+            <div class="about_content">
+                <div class="about_text">
+                    <p>Hallo mijn naam is Lucas ik ben een software developer. ik studeer momenteel software development op het Technova College.</p>
+                    <a href="https://www.linkedin.com/in/lucas-koot/" class="btn">Linkedin</a>
+                </div>
+                <div class="about_photo-container">
+                    <img class="about_photo" src="./images/picture.jpg" alt="">
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
+</main>
 
-  <!-- Contact -->
-
-  <section class="contact" id="contact">
+<!-- Contact -->
+<section class="contact" id="contact">
     <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Ben je opzoek naar iemand of heb je een vraag voel je vrij om mij een email te sturen naar dit adress.
-        </p>
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
+        <h2>Get in Touch</h2>
+        <div class="contact_info">
+            <p>Ben je op zoek naar iemand of heb je een vraag voel je vrij om mij een email te sturen naar dit adres.</p>
+            <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Footer -->
-
-  <footer role="contentinfo" class="footer">
+<!-- Footer -->
+<footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/IDontCaramel" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <!-- <li class="footer__social-link-item">
-          <a href="#" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li> -->
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/lucas-koot/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <p>
-        &copy; 2024 - developed by <a href="https://github.com/IDontCaramel" class="link">Lucas Koot</a>.
-      </p>
+        <ul class="footer_social-links">
+            <li class="footer_social-link-item">
+                <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
+                    <img src="./images/twitter.svg" class="footer_social-image" alt="Twitter">
+                </a>
+            </li>
+            <li class="footer_social-link-item">
+                <a href="https://github.com/IDontCaramel" title="Link to Github Profile">
+                    <img src="./images/github.svg" class="footer_social-image" alt="Github">
+                </a>
+            </li>
+            <!-- <li class="footer_social-link-item"><a href="#" title="Link to Codepen Profile"><img src="./images/codepen.svg" class="footer_social-image" alt="Codepen"></a></li> -->
+            <li class="footer_social-link-item">
+                <a href="https://www.linkedin.com/in/lucas-koot/">
+                    <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer_social-image" alt="Linkedin">
+                </a>
+            </li>
+        </ul>
+        <p>&copy; 2024 - developed by <a href="https://github.com/IDontCaramel" class="link">Lucas Koot</a>.</p>
     </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+</footer>
+<a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top_image">
+</a>
+<script src="./index.js"></script>
 </body>
-
 </html>
