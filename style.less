@@ -13,6 +13,28 @@
     src: url('./fonts/Jost-Regular.ttf') format('woff');
 }
 
+.cursor {
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    background: #ff0505;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    border: 10px;
+    border-color: #4846e6;
+}
+
+/* Optional: Add hover effect */
+.cursorhover {
+    transform: scale(1.5);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+
 // Colors
 @black: #000;
 @selected: #4846e6;
@@ -32,6 +54,7 @@ html {
 }
 
 body {
+    cursor: none !important;
     font-size: 1.8rem;
     font-family: 'Hk Grotesk', sans-serif;
     font-weight: 400;
@@ -172,9 +195,11 @@ body:not(.user-is-tabbing) a:focus {
 
 .link:hover {
     color: @selected;
+    cursor: none;
 }
 
 .btn {
+    cursor: none;
     position: relative;
     display: inline-block;
     padding: 1rem 4.2rem;
@@ -182,10 +207,13 @@ body:not(.user-is-tabbing) a:focus {
     color: inherit;
     border: 1px solid  @selected;
     font-weight: 400;
+    
+    
 }
 
 .btn:focus {
     outline: none;
+    cursor: none;
 }
 
 .btn::after {
@@ -205,6 +233,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn:focus::after {
     right: 0;
     background: @selected;
+    cursor: none;
 }
 
 .btn--pink {
@@ -216,9 +245,10 @@ body:not(.user-is-tabbing) a:focus {
     display: none;
 }
 
-.btn--pink:hover,
+.btn--pink:hover + .cursor,
 .btn--pink:focus {
-    background: transparent;
+    background: transparent;  
+    cursor: none;  
 }
 
 .link_text {
@@ -228,6 +258,7 @@ body:not(.user-is-tabbing) a:focus {
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid @selected;
+    cursor: none;
 }
 
 .link_text::after {
@@ -245,12 +276,14 @@ body:not(.user-is-tabbing) a:focus {
 
 .link_text:focus {
     outline: none;
+    cursor: none;
 }
 
 .link_text:hover::after,
 .link_text:focus:after {
     right: 0;
     background: @selected;
+    cursor: none;
 }
 
 .link_text span {
@@ -350,12 +383,14 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav_link:hover {
     color: @selected;
+    cursor: none;
 }
 
 .nav_link:hover::after {
     right: 0;
     height: 2px;
     background: @selected;
+    cursor: none;
 }
 
 /* Header */
@@ -438,10 +473,12 @@ body:not(.user-is-tabbing) a:focus {
     height: 6rem;
     /* margin-left: 2rem; */
     transition: all .3s;
+    cursor: none;
 }
 
 .work_code:hover {
     transform: scale(1.2);
+    cursor: none;
 }
 
 .work_image-box {
@@ -504,6 +541,7 @@ body:not(.user-is-tabbing) a:focus {
 .footer {
     text-align: center;
     padding: 3rem 0;
+    cursor: none;
 }
 
 .footer_social-links {
@@ -511,19 +549,25 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: center;
     padding: 2rem 0;
     list-style: none;
+    cursor: none;
 }
+
+
 
 .footer_social-link-item:not(:last-of-type) {
     margin-right: 2rem;
+    cursor: none;
 }
 
 .footer_social-image {
     height: 4rem;
+    cursor: none;
 }
 
 .footer_github-buttons {
     display: flex;
     justify-content: center;
+    cursor: none;
 }
 
 .footer_github-buttons iframe {

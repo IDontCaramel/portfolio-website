@@ -1,6 +1,4 @@
-/* -----------------------------------------
-  Have focus outline only for keyboard users 
- ---------------------------------------- */
+
 
 const handleFirstTab = (e) => {
   if(e.key === 'Tab') {
@@ -41,3 +39,20 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+
+
+const cursorSmall = document.querySelector('.cursor');
+
+
+
+const positionElement = (e)=> {
+  const mouseY = e.clientY;
+  const mouseX = e.clientX;
+   
+  cursorSmall.style.transform = `translate3d(${mouseX + -16}px, ${mouseY - 10}px, 0)`;
+  
+ 
+}
+
+window.addEventListener('mousemove', positionElement)
