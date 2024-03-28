@@ -1,5 +1,4 @@
 
-
 const handleFirstTab = (e) => {
   if(e.key === 'Tab') {
     document.body.classList.add('user-is-tabbing')
@@ -41,18 +40,48 @@ window.addEventListener("scroll", () => {
 });
 
 
-
 const cursorSmall = document.querySelector('.cursor');
 
+const clickAnimation = (event) => {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+
+  if (event.type === "mousedown") {
+    cursorSmall.style.transform = `translate3d(${mouseX - 16}px, ${mouseY - 16}px, 0) scale(1.5)`;
+  } else if (event.type === "mouseup") {
+    cursorSmall.style.transform = `translate3d(${mouseX - 16}px, ${mouseY - 16}px, 0) scale(1)`;
+  }
+};
+
+const positionElement = (event) => {
+  const mouseY = event.clientY;
+  const mouseX = event.clientX;
+
+  cursorSmall.style.transform = `translate3d(${mouseX - 16}px, ${mouseY - 16}px, 0)`;
+};
+
+// Adding mousedown, mouseup, and mousemove event listeners to document
+document.addEventListener("mousedown", clickAnimation);
+document.addEventListener("mouseup", clickAnimation);
+document.addEventListener("mousemove", positionElement);
 
 
-const positionElement = (e)=> {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
-   
-  cursorSmall.style.transform = `translate3d(${mouseX + -16}px, ${mouseY - 10}px, 0)`;
-  
- 
-}
 
 window.addEventListener('mousemove', positionElement)
+
+
+var i = 0;
+var txt = 'A software developer fluent in Python, C#, and HTML/CSS';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typewriter").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.addEventListener('load', function() {
+  typeWriter();
+});

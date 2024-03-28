@@ -15,23 +15,19 @@
 
 .cursor {
     position: fixed;
-    width: 2rem;
-    height: 2rem;
-    background: #ff0505;
+    width: 1rem;
+    height: 1rem;
+    border-style: double;
+    border-width: 5px;
     border-radius: 50%;
     pointer-events: none;
+    color: #4846e6;
     z-index: 9999;
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
-    border: 10px;
-    border-color: #4846e6;
+    
 }
 
-/* Optional: Add hover effect */
-.cursorhover {
-    transform: scale(1.5);
-    background: rgba(0, 0, 0, 0.6);
-}
 
 
 
@@ -45,6 +41,7 @@ html {
     font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
     box-sizing: border-box;
     scroll-behavior: smooth;
+    margin: 0%;
 }
 
 @media(max-width: 1000px) {
@@ -395,6 +392,44 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Header */
 
+.name {
+    display: inline-block; /* or any other appropriate display property */
+    /* Add any other styles you want for your .name element */
+    -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  @-webkit-keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0.4);
+      transform: scaleX(0.4);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+    }
+  }
+  @keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0.4);
+      transform: scaleX(0.4);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+    }
+  }
+  
+  
+
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
@@ -428,6 +463,31 @@ body:not(.user-is-tabbing) a:focus {
         transform: scale(.8);
     }
 }
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #333; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: @selected; }
+  }
+
+
 
 /* Work */
 
